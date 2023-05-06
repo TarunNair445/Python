@@ -1,39 +1,43 @@
-number= 55
-number2 = str(number)
-print(number2)
-print('number is '+ number2)
-
-print(round(100.4))
-
-radius = float(input('Enter the radius of the circle: '))
-area = 3.14 * radius ** 2
-print('The area of the circle is :', area)
-
-name = input('Enter your name: ')
-age = input('Enter your age: ')
-print('Your name is '+ name + ', and your age is '+ age )
-
-sentence = input('Enter your sentence: ')
-print('Your sentence is ' + sentence)
-word1 = input('Enter the word you want to replace: ')
-word2 = input('enter the word you want to replace it with: ')
-print(sentence.replace(word1,word2))
-
-list1 = [1,2,3,4,5]
-list2 = ['Tarun ', 'Tushar','Nakul','valorant','Pubg']
-list1.extend(list2)
-print(list1)
-
-
-list1 = [2,7,3,4,5]
-list2 = ['Tarun ', 'Tushar','Nakul','valorant','Pubg']
-list1.sort()
-print(list1)    
-
-def greetings_function(name):
-    print('WELCOME'+name)
+def greetings_function(name,age):
+    print('Welocome '+name+'.You are '+age+' years old')
     
-greetings_function(' Tarun Nair')    
+name = input('Enter your  name:')
+age = input('Enter your  age :')
+
+greetings_function(name,age)   
+
+def Adding_numbers(num1,num2):
+    return (num1+num2)
+
+num1=int(input('enter 1st number:'))
+num2=int(input('enter 2nd number:'))
+print(Adding_numbers(num1,num2))
+                    
+a=input('Enter 1st number:') 
+b=input('Enter 2nd number:')  
+
+if a == b:
+   print('a equals to b')
+   
+else:
+    print('a not equal to b')   
+           
+                         
+a= int(input('Enter your number:'))    
+
+if  a%2 ==0:
+    print('Your number is even')
+    
+else: 
+    print("Your number is odd")    
+    
+i=1
+while i<10:
+    print(i)
+    i = i + 1    
+               
+                
+    
     
     
     
